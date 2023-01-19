@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#09090A;
+    color: #FFFFFF;
+    /*display: grid;
+    place-items: center;*/
+    height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 8em;
+    margin-top: 3em;
+}
+
+
+.cabecalho__botao{
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #8B5CF6;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho__botao-texto{
+    font-style: normal;
+    font-weight: 600;
+}
