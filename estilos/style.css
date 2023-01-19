@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -16,10 +17,14 @@ body{
 
 .cabecalho{
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: space-between;
-    margin: 1em 8em;
-    margin-top: 3em;
+    padding: 48px;
+    
+    position: fixed;
+    width: 100vw;
+    background-color: #09090A;
 }
 
 
@@ -36,29 +41,60 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-.corpo{
+.form-habits{
     display: flex;
+    padding: 182px 48px 48px 0;
+    width: fit-content;
+}
+
+.habits{
+    padding-top: 47px;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: fixed;
+    background-color: #09090ade;
     
 }
-.corpo__dias{
+
+.habit{
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.days{
     display: flex;
     margin-left: 32px;
     gap: 48px;
+    padding-left: 100px;
 }
 
-.corpo__dias-dia{
+.day{
     display: flex;
     flex-direction: column;
+    gap: 24px;
+    align-items: center;
 
+    margin-bottom: 8px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-size: 20px;
+    color: #A1A1AA;
 }
+
 
 .cabecalho__botao-texto{
     font-style: normal;
     font-weight: 600;
 }
 
-
-.corpo__dia-check{
+input{
 
     appearance: none;
     -webkit-appearance: none;
@@ -70,7 +106,13 @@ body{
 }
 
 /*pseudo-selector*/
-.corpo__dia-check:checked{
+input:checked{
     background: #8B5CF6;
     border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px) {
+    div.cabecalho__botao-texto{
+        display: none;
+    }
 }

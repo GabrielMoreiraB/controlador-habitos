@@ -13,34 +13,27 @@
         <img src="svg/logo.svg" class="cabecalho__logo" alt="Logo Habits">
         <button class="cabecalho__botao">
             <img class="cabecalho__botao-img" src="svg/plus.svg" alt="simbolo mais"> 
-            <p class="cabecalho__botao-texto">Registrar o meu Dia</p>
+            <div class="cabecalho__botao-texto">Registrar o meu Dia</div>
         </button>
     </header>  
 
     <main >
-        <form class="corpo">
-            <div class="corpo__habitos">
-                <div class="corpo__habitos-habito">🏃‍♂️</div>
-                <div class="corpo__habitos-habito">💧</div>
-                <div class="corpo__habitos-habito">💪</div>
+        <form class="form-habits">
+            <div class="habits">
+                <div class="habit" data-name="run">🏃‍♂️</div>
+                <div class="habit" data-name="water">💧</div>
+                <div class="habit" data-name="food">🍎</div>
+                <div class="habit" data-name="journal">📰</div>
+                <div class="habit" data-name="takePills">💊</div>
             </div>
 
-            <div class="corpo__dias">
-                <div class="corpo__dias-dia">
-                    <div class="dia">03/01</div>
-                    <input type="checkbox" class="corpo__dia-check" name="correr">
-                    <input type="checkbox" class="corpo__dia-check" name="agua">
-                    <input type="checkbox" class="corpo__dia-check" name="musc">
-                </div>
-                <div class="corpo__dias-dia">
-                    <div class="dia">04/01</div>
-                    <input type="checkbox" class="corpo__dia-check" name="correr">
-                    <input type="checkbox" class="corpo__dia-check" name="agua">
-                    <input type="checkbox" class="corpo__dia-check" name="musc">
-                </div>
+            <div class="days">
+                
             </div>
            
         </form>
     </main>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
